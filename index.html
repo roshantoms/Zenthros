@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenthros</title>
+  <link rel="icon" href="./img/Zenthros_Icon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="container">
+    <div class="logo-container">
+      <img src="./img/Zenthros_Logo.png" alt="Zenthros Logo" class="app-logo">
+    </div>
+    <h1 class="app-name">Zenthros</h1>
+    <p class="subtitle">Your personal tab saver across the galaxy</p>
+    <form id="tab-form">
+      <input type="text" id="title" placeholder="Tab Title" required>
+      <input type="url" id="url" placeholder="Tab URL" required>
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="Work">Work</option>
+        <option value="Study">Study</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="General">General</option>
+        <option value="Research">Research</option>
+      </select>
+      <button type="submit">Save Tab</button>
+    </form>
+    <div id="filters"></div>
+    <div id="tab-list" class="grid"></div>
+  </div>
+  <script src="script.js"></script>
+  <script src="cursor.js"></script>
+</body>
+</html>
